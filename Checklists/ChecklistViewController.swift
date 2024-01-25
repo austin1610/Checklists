@@ -19,7 +19,7 @@ class ChecklistViewController: UITableViewController {
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     )   -> Int {
-        return 1
+        return 5
     }
     
     override func tableView(
