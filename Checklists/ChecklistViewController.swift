@@ -129,7 +129,13 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         _ controller: AddItemViewController,
         didFinishAdding item: ChecklistItem
     ) {
-        navigationController?.popViewController(animated: true)
+      let newRowIndex = items.count
+      items.append(item)
+        
+      let indexPath = IndexPath(row: newRowIndex, section: 0)
+      let indexPaths = [indexPath]
+      tableView.insertRows(at: indexPaths, with: .automatic)
+      navigationController?.popViewController(animated:true)
     }
     
     // MARK: - Navigation
