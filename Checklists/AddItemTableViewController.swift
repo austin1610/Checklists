@@ -8,7 +8,8 @@
 import UIKit
 
 class AddItemTableViewController: UITableViewController {
-
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
