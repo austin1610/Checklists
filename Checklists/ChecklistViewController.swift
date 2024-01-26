@@ -118,4 +118,17 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         let indexPaths = [indexPath]
         tableView.insertRows(at: indexPaths, with: .automatic)
     }
+    
+    // MARK: - Add Item ViewController Delegates
+    func addItemViewControllerDidCancel(
+       _ controller: AddItemViewController
+    ) {
+       navigationController?.popViewController(animated: true)
+    }
+    func addItemViewController(
+       _ controller: AddItemViewController,
+       didFinishAdding item: ChecklistItem
+    ) {
+       navigationController?.popViewController(animated: true)
+    }
 }
