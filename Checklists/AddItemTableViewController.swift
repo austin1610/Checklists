@@ -8,6 +8,7 @@
 import UIKit
 
 class AddItemTableViewController: UITableViewController, UITextFieldDelegate {
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
