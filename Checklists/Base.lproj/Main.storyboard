@@ -48,6 +48,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="owb-NH-3m1">
                             <connections>
                                 <action selector="addItem" destination="kcd-q7-krQ" id="ab0-8x-Bma"/>
+                                <segue destination="HOD-RY-TYq" kind="show" id="qEx-Jg-5WW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -79,6 +80,7 @@
                             <outlet property="delegate" destination="HOD-RY-TYq" id="L44-ae-hFi"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="EhM-2c-zUk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyW-oG-Mtq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
