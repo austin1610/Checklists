@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Checklist View Controller-->
+        <!--Checklists-->
         <scene sceneID="Ws8-6t-ZQV">
             <objects>
                 <tableViewController id="kcd-q7-krQ" customClass="ChecklistViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,14 +17,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="5jZ-5p-GdZ">
-                                <rect key="frame" x="0.0" y="50" width="375" height="66"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="65.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5jZ-5p-GdZ" id="M5Z-6P-SPV">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Yg-0hj">
-                                            <rect key="frame" x="32" y="22" width="328" height="21.5"/>
+                                            <rect key="frame" x="32" y="22" width="328" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="kcd-q7-krQ" id="yhw-0G-Uw8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ihc-7w-ipI"/>
+                    <navigationItem key="navigationItem" title="Checklists" id="Ihc-7w-ipI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxU-FZ-uCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
