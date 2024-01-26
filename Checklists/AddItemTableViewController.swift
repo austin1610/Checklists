@@ -18,7 +18,9 @@ class AddItemTableViewController: UITableViewController {
     
     // MARK: - Actions
     @IBAction func cancel() {
-     navigationController?.popViewController(animated: true)
+      print("Contents of the text field: \(textField.text!)")
+        
+      navigationController?.popViewController(animated: true)
     }
     
     @IBAction func done() {
