@@ -49,6 +49,7 @@ class ChecklistViewController: UITableViewController {
          label.text = "Eat ice cream"
          }
         
+        configureCheckmark(for: cell, at: indexPath)
         return cell
     }
     
