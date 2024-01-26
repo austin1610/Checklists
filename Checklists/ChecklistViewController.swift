@@ -79,11 +79,11 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         for cell: UITableViewCell,
         with item: ChecklistItem
     ) {
-       if item.checked {
-         cell.accessoryType = .checkmark
-       } else {
-         cell.accessoryType = .none
-       }
+        if item.checked {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
     }
     
     func configureText(
@@ -95,15 +95,15 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
     }
     
     override func tableView(
-      _ tableView: UITableView,
-      commit editingStyle: UITableViewCell.EditingStyle,
-      forRowAt indexPath: IndexPath
+        _ tableView: UITableView,
+        commit editingStyle: UITableViewCell.EditingStyle,
+        forRowAt indexPath: IndexPath
     ) {
-     // 1
-      items.remove(at: indexPath.row)
-     // 2
-      let indexPaths = [indexPath]
-      tableView.deleteRows(at: indexPaths, with: .automatic)
+        // 1
+        items.remove(at: indexPath.row)
+        // 2
+        let indexPaths = [indexPath]
+        tableView.deleteRows(at: indexPaths, with: .automatic)
     }
     
     // MARK: - Actions
@@ -121,14 +121,28 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
     
     // MARK: - Add Item ViewController Delegates
     func addItemViewControllerDidCancel(
-       _ controller: AddItemViewController
+        _ controller: AddItemViewController
     ) {
-       navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     func addItemViewController(
-       _ controller: AddItemViewController,
-       didFinishAdding item: ChecklistItem
+        _ controller: AddItemViewController,
+        didFinishAdding item: ChecklistItem
     ) {
-       navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(
+        for segue: UIStoryboardSegue,
+        sender: Any?
+    ) {
+        // 1
+        if segue.identifier == "AddItem" {
+            // 2
+            let controller = segue.destination as! AddItemViewController
+            // 3
+            controller.delegate = self
+        }
     }
 }
