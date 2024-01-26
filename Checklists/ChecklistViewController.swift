@@ -77,14 +77,12 @@ class ChecklistViewController: UITableViewController {
     
     func configureCheckmark(
         for cell: UITableViewCell,
-        at indexPath: IndexPath
+        with item: ChecklistItem
     ) {
-        let item = items[indexPath.row]
-        
-        if item.checked {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
+       if item.checked {
+         cell.accessoryType = .checkmark
+       } else {
+         cell.accessoryType = .none
+       }
     }
 }
