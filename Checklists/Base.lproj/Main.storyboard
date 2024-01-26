@@ -106,7 +106,7 @@
                                 <action selector="cancel" destination="HOD-RY-TYq" id="Ufy-vG-HYA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="SMj-9a-dBj">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="SMj-9a-dBj">
                             <connections>
                                 <action selector="done" destination="HOD-RY-TYq" id="rU2-2I-ZxY"/>
                             </connections>
