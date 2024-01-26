@@ -7,9 +7,20 @@
 
 import UIKit
 
+protocol AddItemViewControllerDelegate: AnyObject {
+   func addItemViewControllerDidCancel(
+     _ controller: AddItemViewController)
+   func addItemViewController(
+     _ controller: AddItemViewController,
+     didFinishAdding item: ChecklistItem
+ )
+}
+
 class AddItemTableViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
+    
+    weak var delegate: AddItemViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
