@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AddItemViewControllerDelegate: class {
+protocol AddItemViewControllerDelegate: AnyObject {
   func addItemViewControllerDidCancel(_ controller: AddItemViewController)
   func addItemViewController(
     _ controller: AddItemViewController,
