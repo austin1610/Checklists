@@ -17,24 +17,36 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="5jZ-5p-GdZ">
-                                <rect key="frame" x="0.0" y="50" width="375" height="65.5"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5jZ-5p-GdZ" id="M5Z-6P-SPV">
-                                    <rect key="frame" x="0.0" y="0.0" width="316.5" height="65.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="316.5" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Yg-0hj">
-                                            <rect key="frame" x="32" y="22" width="309.5" height="21"/>
+                                            <rect key="frame" x="37" y="11" width="271.5" height="22.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hce-gq-dF7">
+                                            <rect key="frame" x="16" y="8.5" width="13" height="27.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="13" id="9ID-kF-iSI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="TlB-Yg-0hj" secondAttribute="trailing" constant="-33" id="M7T-v7-QTX"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="TlB-Yg-0hj" secondAttribute="bottom" constant="11.5" id="VGp-sd-DqE"/>
-                                        <constraint firstItem="TlB-Yg-0hj" firstAttribute="top" secondItem="M5Z-6P-SPV" secondAttribute="topMargin" constant="11" id="yjK-nQ-V3s"/>
-                                        <constraint firstItem="TlB-Yg-0hj" firstAttribute="leading" secondItem="M5Z-6P-SPV" secondAttribute="leadingMargin" constant="16" id="zM2-Gg-xm5"/>
+                                        <constraint firstItem="hce-gq-dF7" firstAttribute="centerY" secondItem="M5Z-6P-SPV" secondAttribute="centerY" id="19d-HO-yFA"/>
+                                        <constraint firstItem="TlB-Yg-0hj" firstAttribute="centerY" secondItem="M5Z-6P-SPV" secondAttribute="centerY" id="4g7-aI-gDd"/>
+                                        <constraint firstItem="hce-gq-dF7" firstAttribute="leading" secondItem="M5Z-6P-SPV" secondAttribute="leading" constant="16" id="4wK-Fk-GaB"/>
+                                        <constraint firstItem="TlB-Yg-0hj" firstAttribute="bottom" secondItem="M5Z-6P-SPV" secondAttribute="bottomMargin" id="9Bu-bM-vL4"/>
+                                        <constraint firstItem="hce-gq-dF7" firstAttribute="top" secondItem="M5Z-6P-SPV" secondAttribute="topMargin" constant="-2.5" id="K0Q-w9-eUC"/>
+                                        <constraint firstItem="TlB-Yg-0hj" firstAttribute="leading" secondItem="hce-gq-dF7" secondAttribute="trailing" constant="8" id="YCC-OB-N2T"/>
+                                        <constraint firstAttribute="trailing" secondItem="TlB-Yg-0hj" secondAttribute="trailing" constant="8" id="yaI-Rx-pkA"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
