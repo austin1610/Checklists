@@ -24,6 +24,10 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.largeTitleDisplayMode = .never
+      if let item = itemToEdit {
+        title = "Edit Item"
+        textField.text = item.text
+      }
   }
 
   override func viewWillAppear(_ animated: Bool) {
