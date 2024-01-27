@@ -36,19 +36,19 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
 
   // MARK: - Actions
   @IBAction func cancel() {
-    delegate?. itemDetailViewControllerDidCancel(self)
+    delegate?.itemDetailViewControllerDidCancel(self)
   }
 
   @IBAction func done() {
     if let item = itemToEdit {
       item.text = textField.text!
-      delegate?. itemDetailViewController(
+      delegate?.itemDetailViewController(
         self,
         didFinishEditing: item)
     } else {
        let item = ChecklistItem()
        item.text = textField.text!
-       delegate?. itemDetailViewController(self, didFinishAdding: item)
+       delegate?.itemDetailViewController(self, didFinishAdding: item)
     }
   }
 
