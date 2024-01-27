@@ -102,11 +102,11 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
   }
 
   // MARK: - Add Item ViewController Delegates
-  func addItemViewControllerDidCancel(_ controller: ItemDetailViewController) {
+  func  itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController) {
     navigationController?.popViewController(animated: true)
   }
 
-  func addItemViewController(_ controller: ItemDetailViewController, didFinishAdding item: ChecklistItem) {
+  func  itemDetailViewController(_ controller: ItemDetailViewController, didFinishAdding item: ChecklistItem) {
     let newRowIndex = items.count
     items.append(item)
 
@@ -117,7 +117,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     navigationController?.popViewController(animated: true)
   }
     
-  func addItemViewController(
+  func  itemDetailViewController(
     _ controller: ItemDetailViewController,
     didFinishEditing item: ChecklistItem
   ) {
