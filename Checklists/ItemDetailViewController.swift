@@ -22,9 +22,9 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.largeTitleDisplayMode = .never
-      if let item = itemToEdit {
+      if let itemToEdit = itemToEdit {
         title = "Edit Item"
-        textField.text = item.text
+        textField.text = itemToEdit.text
         doneBarButton.isEnabled = true
       }
   }
