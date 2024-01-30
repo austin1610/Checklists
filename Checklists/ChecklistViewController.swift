@@ -119,6 +119,8 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
       configureCheckmark(for: cell, with: item)
     }
     tableView.deselectRow(at: indexPath, animated: true)
+      
+    saveCheckListItems()
   }
 
   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
