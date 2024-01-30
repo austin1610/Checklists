@@ -65,6 +65,18 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
      return
     documentsDirectory().appendingPathComponent("Checklists.plist")
   }
+    
+  func saveCheckListItems() {
+      let encoder = PropertyListEncoder()
+      do {
+          let data = try encoder.encode(items)
+          try data.write(
+            to: dataFilePath(),
+            options: Data.WritingOptions.atomic)
+      } catch {
+          print("Error encoding item array: \(error.localizedDescription)")
+      }
+  }
 
   // MARK: - Navigation
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
