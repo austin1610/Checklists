@@ -60,7 +60,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
   func dataFilePath() -> URL {
      return
-     documentsDirectory().appendingPathComponent("Checklists.plist")
+    documentsDirectory().appendingPathComponent("Checklists.plist")
   }
 
   // MARK: - Navigation
