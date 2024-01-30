@@ -34,6 +34,9 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     let item5 = ChecklistItem()
     item5.text = "Eat ice cream"
     items.append(item5)
+      
+    print("Documents folder is \(documentsDirectory())")
+    print("Data file path is \(dataFilePath())")
   }
 
   func configureCheckmark(for cell: UITableViewCell, with item: ChecklistItem) {
