@@ -9,6 +9,8 @@ import UIKit
 
 class AllListsViewController: UITableViewController {
 
+    let cellIdentifier = "ChecklistCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
