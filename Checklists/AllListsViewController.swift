@@ -16,8 +16,19 @@ class AllListsViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        var list = Checklist(name: "Birthdays")
+        lists.append(list)
+        
+        list = Checklist(name: "Groceries")
+        lists.append(list)
+        
+        list = Checklist(name: "Cool Apps")
+        lists.append(list)
+        
+        list = Checklist(name: "To Do")
+        lists.append(list)
     }
 
     // MARK: - Table view data source
