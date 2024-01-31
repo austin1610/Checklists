@@ -50,5 +50,18 @@ class AllListsViewController: UITableViewController {
         let checklist = lists[indexPath.row]
         performSegue(withIdentifier: "ShowChecklist", sender: checklist)
     }
+    
+    // MARK: -  Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowChecklist" {
+            let controller = segue.destination as!
+            ChecklistViewController
+            controller.checklist = sender as? Checklist
+        }
+    }
 
 }
+
+    
+
