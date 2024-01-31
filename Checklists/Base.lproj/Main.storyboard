@@ -54,8 +54,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Checklist" largeTitleDisplayMode="never" id="eVL-ec-loM">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="6CZ-SJ-BeV"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="KzM-sR-kF8"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="6CZ-SJ-BeV">
+                            <connections>
+                                <action selector="cancel" destination="PMF-za-fOP" id="cGw-vy-hKi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="KzM-sR-kF8">
+                            <connections>
+                                <action selector="done" destination="PMF-za-fOP" id="vRw-DM-KaY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXr-nQ-dUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
