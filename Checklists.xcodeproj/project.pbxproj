@@ -16,6 +16,7 @@
 		2612365C2B638A3D0054A6DD /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612365B2B638A3D0054A6DD /* ChecklistItem.swift */; };
 		2612365E2B643A720054A6DD /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612365D2B643A720054A6DD /* ItemDetailViewController.swift */; };
 		266007B22B69E10F0008C238 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266007B12B69E10F0008C238 /* AllListsViewController.swift */; };
+		266007B42B69F85E0008C238 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266007B32B69F85E0008C238 /* Checklist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2612365B2B638A3D0054A6DD /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		2612365D2B643A720054A6DD /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		266007B12B69E10F0008C238 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		266007B32B69F85E0008C238 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2612365B2B638A3D0054A6DD /* ChecklistItem.swift */,
 				2612365D2B643A720054A6DD /* ItemDetailViewController.swift */,
 				266007B12B69E10F0008C238 /* AllListsViewController.swift */,
+				266007B32B69F85E0008C238 /* Checklist.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				261236482B6224F30054A6DD /* AppDelegate.swift in Sources */,
 				2612364A2B6224F30054A6DD /* SceneDelegate.swift in Sources */,
 				2612365C2B638A3D0054A6DD /* ChecklistItem.swift in Sources */,
+				266007B42B69F85E0008C238 /* Checklist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
