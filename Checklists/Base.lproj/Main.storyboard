@@ -34,7 +34,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5H-Nz-RoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="-820"/>
+            <point key="canvasLocation" x="881" y="-120"/>
         </scene>
         <!--Checklists-->
         <scene sceneID="Ws8-6t-ZQV">
@@ -46,20 +46,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="5jZ-5p-GdZ">
-                                <rect key="frame" x="0.0" y="50" width="375" height="44.5"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5jZ-5p-GdZ" id="M5Z-6P-SPV">
-                                    <rect key="frame" x="0.0" y="0.0" width="316.5" height="44.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="316.5" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Yg-0hj">
-                                            <rect key="frame" x="37" y="11" width="271.5" height="22.5"/>
+                                            <rect key="frame" x="37" y="11" width="271.5" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hce-gq-dF7">
-                                            <rect key="frame" x="16" y="8.5" width="13" height="27.5"/>
+                                            <rect key="frame" x="16" y="8.5" width="13" height="27"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="13" id="9ID-kF-iSI"/>
                                             </constraints>
@@ -98,7 +98,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxU-FZ-uCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.79999999999995" y="-120.08995502248877"/>
+            <point key="canvasLocation" x="1638" y="-120"/>
         </scene>
         <!--Add Item-->
         <scene sceneID="fTk-6y-pcb">
@@ -163,7 +163,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyW-oG-Mtq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768.8" y="-120.08995502248877"/>
+            <point key="canvasLocation" x="2364" y="-120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2kG-f4-gaI">
