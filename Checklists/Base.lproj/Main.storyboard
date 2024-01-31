@@ -20,7 +20,9 @@
                             <outlet property="delegate" destination="csy-WC-fyP" id="uDL-TY-62E"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Checklists" id="R6l-QA-9i2"/>
+                    <navigationItem key="navigationItem" title="Checklists" id="R6l-QA-9i2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZYh-l4-nG9"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="kcd-q7-krQ" kind="show" identifier="ShowChecklist" id="hyd-wn-b6t"/>
                         <segue destination="PMF-za-fOP" kind="show" id="5pZ-gP-HQ9"/>
