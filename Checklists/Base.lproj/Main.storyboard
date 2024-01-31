@@ -53,7 +53,10 @@
                             <outlet property="delegate" destination="PMF-za-fOP" id="NsA-ca-mYt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Checklist" largeTitleDisplayMode="never" id="eVL-ec-loM"/>
+                    <navigationItem key="navigationItem" title="Add Checklist" largeTitleDisplayMode="never" id="eVL-ec-loM">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="6CZ-SJ-BeV"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="KzM-sR-kF8"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXr-nQ-dUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
