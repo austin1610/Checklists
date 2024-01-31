@@ -58,6 +58,10 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
             let controller = segue.destination as!
             ChecklistViewController
             controller.checklist = sender as? Checklist
+        } else if segue.identifier == "AddChecklist" {
+            let controller = segue.destination as!
+    ListDetailViewController
+            controller.delegate = self
         }
     }
 
