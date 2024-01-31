@@ -30,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="881" y="-120"/>
         </scene>
-        <!--List Detail View Controller-->
+        <!--Add Checklist-->
         <scene sceneID="gHc-hS-WQh">
             <objects>
                 <tableViewController id="PMF-za-fOP" customClass="ListDetailViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                             <outlet property="delegate" destination="PMF-za-fOP" id="NsA-ca-mYt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eVL-ec-loM"/>
+                    <navigationItem key="navigationItem" title="Add Checklist" id="eVL-ec-loM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXr-nQ-dUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
