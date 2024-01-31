@@ -75,12 +75,10 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowChecklist" {
-            let controller = segue.destination as!
-            ChecklistViewController
+            let controller = segue.destination as! ChecklistViewController
             controller.checklist = sender as? Checklist
         } else if segue.identifier == "AddChecklist" {
-            let controller = segue.destination as!
-    ListDetailViewController
+            let controller = segue.destination as! ListDetailViewController
             controller.delegate = self
         }
     }
