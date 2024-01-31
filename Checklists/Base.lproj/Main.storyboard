@@ -23,6 +23,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="R6l-QA-9i2"/>
                     <connections>
                         <segue destination="kcd-q7-krQ" kind="show" identifier="ShowChecklist" id="hyd-wn-b6t"/>
+                        <segue destination="PMF-za-fOP" kind="show" id="5pZ-gP-HQ9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5H-Nz-RoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -52,6 +53,7 @@
                             <outlet property="delegate" destination="PMF-za-fOP" id="NsA-ca-mYt"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="eVL-ec-loM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXr-nQ-dUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
