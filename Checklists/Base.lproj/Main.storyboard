@@ -23,13 +23,13 @@
                     <navigationItem key="navigationItem" title="Checklists" id="R6l-QA-9i2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZYh-l4-nG9">
                             <connections>
-                                <segue destination="PMF-za-fOP" kind="show" id="FNz-WB-qP7"/>
+                                <segue destination="PMF-za-fOP" kind="show" identifier="AddChecklist" id="FNz-WB-qP7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="kcd-q7-krQ" kind="show" identifier="ShowChecklist" id="hyd-wn-b6t"/>
-                        <segue destination="PMF-za-fOP" kind="show" id="5pZ-gP-HQ9"/>
+                        <segue destination="PMF-za-fOP" kind="show" identifier="EditChecklist" id="5pZ-gP-HQ9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5H-Nz-RoR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -246,7 +246,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FNz-WB-qP7"/>
+        <segue reference="5pZ-gP-HQ9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
