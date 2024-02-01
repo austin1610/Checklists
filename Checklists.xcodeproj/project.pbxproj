@@ -68,21 +68,45 @@
 		261236462B6224F30054A6DD /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
-				266007B12B69E10F0008C238 /* AllListsViewController.swift */,
+				2632B0902B6B4E4800EE5F82 /* Data Model */,
+				2632B0912B6B4E5500EE5F82 /* View Controllers */,
+				2632B0922B6B4E6800EE5F82 /* Resources */,
 				261236472B6224F30054A6DD /* AppDelegate.swift */,
-				261236502B6224F60054A6DD /* Assets.xcassets */,
-				266007B32B69F85E0008C238 /* Checklist.swift */,
-				2612365B2B638A3D0054A6DD /* ChecklistItem.swift */,
-				2612364B2B6224F30054A6DD /* ChecklistViewController.swift */,
-				2632B08E2B6B3B3800EE5F82 /* DataModel.swift */,
 				261236552B6224F60054A6DD /* Info.plist */,
-				2612365D2B643A720054A6DD /* ItemDetailViewController.swift */,
-				261236522B6224F60054A6DD /* LaunchScreen.storyboard */,
-				266007B52B6A0E3F0008C238 /* ListDetailViewController.swift */,
-				2612364D2B6224F30054A6DD /* Main.storyboard */,
 				261236492B6224F30054A6DD /* SceneDelegate.swift */,
 			);
 			path = Checklists;
+			sourceTree = "<group>";
+		};
+		2632B0902B6B4E4800EE5F82 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				266007B32B69F85E0008C238 /* Checklist.swift */,
+				2612365B2B638A3D0054A6DD /* ChecklistItem.swift */,
+				2632B08E2B6B3B3800EE5F82 /* DataModel.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		2632B0912B6B4E5500EE5F82 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				266007B12B69E10F0008C238 /* AllListsViewController.swift */,
+				2612364B2B6224F30054A6DD /* ChecklistViewController.swift */,
+				2612365D2B643A720054A6DD /* ItemDetailViewController.swift */,
+				266007B52B6A0E3F0008C238 /* ListDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2632B0922B6B4E6800EE5F82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				261236502B6224F60054A6DD /* Assets.xcassets */,
+				261236522B6224F60054A6DD /* LaunchScreen.storyboard */,
+				2612364D2B6224F30054A6DD /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
