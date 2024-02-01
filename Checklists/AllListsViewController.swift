@@ -9,7 +9,7 @@ import UIKit
 
 class AllListsViewController: UITableViewController, ListDetailViewControllerDelegate {
   let cellIdentifier = "ChecklistCell"
-  var lists = [Checklist]()
+  var dataModel = DataModel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,8 +17,6 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
     navigationController?.navigationBar.prefersLargeTitles = true
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     
-    loadCheckList()
-      
   }
 
   // MARK: - Navigation
