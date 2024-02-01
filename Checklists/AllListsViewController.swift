@@ -18,7 +18,7 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     
     loadCheckList()
-      }
+      
   }
 
   // MARK: - Navigation
