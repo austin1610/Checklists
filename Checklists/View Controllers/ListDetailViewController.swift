@@ -24,6 +24,7 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
     weak var delegate: ListDetailViewControllerDelegate?
     
     var checklistToEdit: Checklist?
+    var iconName = "Folder"
     
     override func viewDidLoad() {
         super.viewDidLoad()
