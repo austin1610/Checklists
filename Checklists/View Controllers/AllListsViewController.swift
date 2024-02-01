@@ -13,20 +13,25 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Enable large titles
+    
     navigationController?.navigationBar.prefersLargeTitles = true
       
   }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
         
-        navigationController?.delegate = self
+    navigationController?.delegate = self
         
-        let index = dataModel.indexOfSelectedChecklist
-        if index >= 0 && index < dataModel.lists.count {
-            let checklist = dataModel.lists[index]
-            performSegue(withIdentifier: "ShowChecklist", sender: checklist)
+    let index = dataModel.indexOfSelectedChecklist
+      if index >= 0 && index < dataModel.lists.count {
+          let checklist = dataModel.lists[index]
+          performSegue(withIdentifier: "ShowChecklist", sender: checklist)
         }
     }
 
