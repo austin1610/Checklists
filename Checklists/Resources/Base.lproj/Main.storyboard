@@ -48,15 +48,14 @@
                             <tableViewSection id="Waz-os-sD1">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vki-W9-cK7">
-                                        <rect key="frame" x="0.0" y="18" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="18" width="375" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vki-W9-cK7" id="xJ0-1h-Y80">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the List" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-ia-98d">
-                                                    <rect key="frame" x="16" y="9" width="343" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the List" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-ia-98d">
+                                                    <rect key="frame" x="16" y="9" width="343" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
@@ -65,6 +64,12 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KZ5-ia-98d" firstAttribute="top" secondItem="xJ0-1h-Y80" secondAttribute="top" constant="9" id="5DC-fp-z34"/>
+                                                <constraint firstAttribute="trailing" secondItem="KZ5-ia-98d" secondAttribute="trailing" constant="16" id="Jv3-p3-9HY"/>
+                                                <constraint firstItem="KZ5-ia-98d" firstAttribute="leading" secondItem="xJ0-1h-Y80" secondAttribute="leading" constant="16" id="Wfc-oe-cMM"/>
+                                                <constraint firstAttribute="bottom" secondItem="KZ5-ia-98d" secondAttribute="bottom" constant="0.5" id="Z60-n5-e4g"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -72,7 +77,7 @@
                             <tableViewSection id="81C-bD-qum">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6f3-am-Eft">
-                                        <rect key="frame" x="0.0" y="97.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="86" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6f3-am-Eft" id="bOL-aM-bkk">
                                             <rect key="frame" x="0.0" y="0.0" width="348.5" height="43.5"/>
