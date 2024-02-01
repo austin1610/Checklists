@@ -44,6 +44,7 @@ class DataModel {
     
     init() {
         loadChecklist()
+        registerDefaults()
     }
     
     func registerDefaults() {
