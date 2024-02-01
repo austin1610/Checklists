@@ -64,6 +64,15 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate, Icon
         
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PickIcon" {
+            let controller = segue.destination as!
+        IconPickerViewController
+            controller.delegate = self
+        }
+    }
+    
     // MARK: - Table View Delegates
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         return indexPath.section == 1 ? indexPath : nil
