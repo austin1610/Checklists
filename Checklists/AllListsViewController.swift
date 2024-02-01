@@ -29,6 +29,13 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
       controller.delegate = self
     }
   }
+    
+  // MARK: - Navigation Controller Delegates
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController === self {
+            UserDefaults.standard.set(-1, forKey: "ChecklistIndex")
+        }
+    }
 
   // MARK: - Table view data source
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
