@@ -45,7 +45,8 @@ class DataModel {
             let decoder = PropertyListDecoder()
             do {
                 lists = try decoder.decode(
-                  [Checklist].self, from: data)
+                [Checklist].self, from: data)
+                sortChecklists()
             } catch {
                 print("Error decoding list array: \(error.localizedDescription)")
             }
