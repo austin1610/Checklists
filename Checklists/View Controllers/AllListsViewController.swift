@@ -15,8 +15,7 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
     super.viewDidLoad()
     // Enable large titles
     navigationController?.navigationBar.prefersLargeTitles = true
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-    
+      
   }
     
     override func viewDidAppear(_ animated: Bool) {
