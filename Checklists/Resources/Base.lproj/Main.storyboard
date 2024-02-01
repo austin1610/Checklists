@@ -89,6 +89,9 @@
                                                 <constraint firstItem="Hrv-je-h8d" firstAttribute="leading" secondItem="bOL-aM-bkk" secondAttribute="leading" constant="8" id="vbx-ET-Ure"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9w7-KP-cPI" kind="show" id="DVQ-Ek-aCb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -112,6 +115,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="KzM-sR-kF8" id="uGF-wf-BSn"/>
+                        <outlet property="iconImage" destination="TXa-VN-Ujv" id="BbW-IQ-qvo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXr-nQ-dUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,6 +154,7 @@
                             <outlet property="delegate" destination="9w7-KP-cPI" id="jB3-2B-NF6"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="oXr-Li-suf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kp6-ET-eqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
