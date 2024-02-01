@@ -52,7 +52,7 @@ class DataModel {
         }
     }
     
-    func sortChecklist() {
+    func sortChecklists() {
         lists.sort { list1, list2 in
             return list1.name.localizedStandardCompare(list2.name) == .orderedAscending
         }
