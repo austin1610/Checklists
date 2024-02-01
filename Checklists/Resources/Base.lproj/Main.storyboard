@@ -81,11 +81,11 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Hrv-je-h8d" firstAttribute="centerY" secondItem="TXa-VN-Ujv" secondAttribute="centerY" id="AaQ-1e-HkI"/>
                                                 <constraint firstAttribute="trailing" secondItem="TXa-VN-Ujv" secondAttribute="trailing" constant="8" id="CGh-HX-ZBD"/>
                                                 <constraint firstItem="TXa-VN-Ujv" firstAttribute="leading" secondItem="Hrv-je-h8d" secondAttribute="trailing" constant="264" id="Q4H-3E-9cb"/>
                                                 <constraint firstAttribute="bottom" secondItem="TXa-VN-Ujv" secondAttribute="bottom" constant="3.5" id="brA-2N-eVf"/>
                                                 <constraint firstItem="TXa-VN-Ujv" firstAttribute="top" secondItem="bOL-aM-bkk" secondAttribute="top" constant="3" id="eNQ-tq-u6A"/>
-                                                <constraint firstItem="Hrv-je-h8d" firstAttribute="centerY" secondItem="bOL-aM-bkk" secondAttribute="centerY" id="gdS-OI-XfJ"/>
                                                 <constraint firstItem="Hrv-je-h8d" firstAttribute="leading" secondItem="bOL-aM-bkk" secondAttribute="leading" constant="8" id="vbx-ET-Ure"/>
                                             </constraints>
                                         </tableViewCellContentView>
