@@ -58,7 +58,8 @@ class DataModel {
     }
     
     func registerDefaults() {
-        let dictionary = [ "ChecklistIndex": -1 ]
+        let dictionary = [ "ChecklistIndex": -1, "FirstTime": true ] as
+        [String: Any]
         UserDefaults.standard.register(defaults: dictionary)
     }
 
