@@ -16,7 +16,7 @@ protocol ListDetailViewControllerDelegate: AnyObject {
     
 }
 
-class ListDetailViewController: UITableViewController, UITextFieldDelegate {
+class ListDetailViewController: UITableViewController, UITextFieldDelegate, IconPickerViewControllerDelegate {
     @IBOutlet var textField: UITextField!
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet var doneBarButton: UIBarButtonItem!
@@ -86,4 +86,10 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
         return true
     }
     
+    // MARK: - Icon Picker View Controller Delegate
+    func iconPicker(_ picker: IconPickerViewController, didPick iconName: String) {
+        self.iconName = iconName
+        iconImage.image = UIImage(named: iconName)
+        navigationController?.popViewController(animated: true)
+        }
 }
