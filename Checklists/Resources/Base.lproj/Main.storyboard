@@ -53,6 +53,18 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vki-W9-cK7" id="xJ0-1h-Y80">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of the List" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-ia-98d">
+                                                    <rect key="frame" x="16" y="9" width="343" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="PMF-za-fOP" eventType="editingDidEndOnExit" id="fMI-IV-bsm"/>
+                                                        <outlet property="delegate" destination="PMF-za-fOP" id="Atz-zi-hPZ"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -116,6 +128,7 @@
                     <connections>
                         <outlet property="doneBarButton" destination="KzM-sR-kF8" id="uGF-wf-BSn"/>
                         <outlet property="iconImage" destination="TXa-VN-Ujv" id="BbW-IQ-qvo"/>
+                        <outlet property="textField" destination="KZ5-ia-98d" id="KXB-ja-jEs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXr-nQ-dUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
