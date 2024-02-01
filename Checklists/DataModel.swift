@@ -55,6 +55,7 @@ class DataModel {
     init() {
         loadChecklist()
         registerDefaults()
+        handleFirstTime()
     }
     
     func registerDefaults() {
