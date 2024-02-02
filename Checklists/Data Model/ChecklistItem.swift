@@ -22,6 +22,7 @@ class ChecklistItem: NSObject, Codable {
     }
     
     func scheduleNotification() {
+        removeNotification()
         if shouldRemind && dueDate > Date() {
             let content = UNMutableNotificationContent()
             content.title = "Reminder:"
