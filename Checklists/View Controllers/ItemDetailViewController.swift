@@ -25,10 +25,12 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.largeTitleDisplayMode = .never
-      if let itemToEdit = itemToEdit {
+      if let item = itemToEdit {
         title = "Edit Item"
         textField.text = itemToEdit.text
         doneBarButton.isEnabled = true
+        shouldRemindSwitch.isOn = item.shouldRemind
+        datePicker.date = item.dueDate
       }
   }
 
