@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 class ChecklistItem: NSObject, Codable {
   var text = ""
