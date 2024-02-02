@@ -50,7 +50,6 @@ class ChecklistItem: NSObject, Codable {
             let center = UNUserNotificationCenter.current()
             center.add(request)
             
-            print("Scheduled: \(request) for itemID: \(itemID)")
         }
     }
     
