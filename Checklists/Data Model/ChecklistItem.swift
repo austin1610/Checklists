@@ -48,4 +48,9 @@ class ChecklistItem: NSObject, Codable {
             print("Scheduled: \(request) for itemID: \(itemID)")
         }
     }
+    
+    func removeNotification() {
+        let center = UNUserNotificationCenter.current()
+        center.removePendingNotificationRequests(withIdentifiers:  ["\(itemID)"])
+    }
 }
